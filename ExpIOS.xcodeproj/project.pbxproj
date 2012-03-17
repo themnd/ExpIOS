@@ -16,6 +16,8 @@
 		1FA78F1315129DFA00EC0A26 /* bg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FA78F1015129DFA00EC0A26 /* bg2.jpg */; };
 		1FA78FC21512A77700EC0A26 /* pallone.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA78FC11512A77700EC0A26 /* pallone.png */; };
 		1FA78FD11512A92A00EC0A26 /* Shot.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA78FD01512A92A00EC0A26 /* Shot.m */; };
+		1FE6000D15147065007A3A54 /* BaseGameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6000C15147065007A3A54 /* BaseGameLayer.m */; };
+		1FE6FFF915146DF8007A3A54 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6FFF815146DF8007A3A54 /* GameLayer.m */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
 		504DFBD010AF12E9006D82FE /* CLScoreServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBCA10AF12E9006D82FE /* CLScoreServerRequest.h */; };
@@ -271,6 +273,10 @@
 		1FA78FC11512A77700EC0A26 /* pallone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pallone.png; sourceTree = "<group>"; };
 		1FA78FCF1512A92A00EC0A26 /* Shot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shot.h; sourceTree = "<group>"; };
 		1FA78FD01512A92A00EC0A26 /* Shot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shot.m; sourceTree = "<group>"; };
+		1FE6000B15147065007A3A54 /* BaseGameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGameLayer.h; sourceTree = "<group>"; };
+		1FE6000C15147065007A3A54 /* BaseGameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGameLayer.m; sourceTree = "<group>"; };
+		1FE6FFF715146DF8007A3A54 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		1FE6FFF815146DF8007A3A54 /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLScoreServerPost.h; sourceTree = "<group>"; };
 		504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLScoreServerPost.m; sourceTree = "<group>"; };
@@ -598,6 +604,10 @@
 				E0F80F5F120A0182005866B8 /* RootViewController.m */,
 				1F3B9A2C0EF2145700286867 /* ExpIOSAppDelegate.h */,
 				1F3B9A2B0EF2145700286867 /* ExpIOSAppDelegate.m */,
+				1FE6FFF715146DF8007A3A54 /* GameLayer.h */,
+				1FE6FFF815146DF8007A3A54 /* GameLayer.m */,
+				1FE6000B15147065007A3A54 /* BaseGameLayer.h */,
+				1FE6000C15147065007A3A54 /* BaseGameLayer.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1139,6 +1149,8 @@
 				1FA78F0A15129DD500EC0A26 /* Status.m in Sources */,
 				1FA78F0D15129DE000EC0A26 /* Background.m in Sources */,
 				1FA78FD11512A92A00EC0A26 /* Shot.m in Sources */,
+				1FE6FFF915146DF8007A3A54 /* GameLayer.m in Sources */,
+				1FE6000D15147065007A3A54 /* BaseGameLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

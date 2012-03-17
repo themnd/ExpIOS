@@ -6,24 +6,20 @@
 //  Copyright 2012 Atex Global Media SpA. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "BaseGameLayer.h"
 
-@interface Status : CCLayer {
+@interface Status : BaseGameLayer {
     
     BOOL isAmiciShown;
     CCSprite* amici;
     CCLabelTTF* amiciLabel;
 
-    float previousTouchAngle, currentTouchAngle;
-    CGPoint startTouchPoint, endTouchPoint;
-    
-    NSMutableArray *bullets;
 }
 
 @property BOOL isAmiciShown;
 
-- (void)update:(ccTime)dt;
 - (void) setAmiciVisible: (BOOL) visible;
+- (void) doShot: (CGPoint) point;
 
 @end

@@ -12,6 +12,7 @@
 #import "GameConfig.h"
 #import "Background.h"
 #import "Status.h"
+#import "GameLayer.h"
 #import "RootViewController.h"
 
 @implementation ExpIOSAppDelegate
@@ -169,6 +170,9 @@
 	
 	// add layer as a child to scene
 	[scene addChild: layer];
+    
+    GameLayer* gameLayer = [GameLayer node];
+    [scene addChild: gameLayer];
     
     Status* statusLayer = [Status node];
     [scene addChild: statusLayer];
