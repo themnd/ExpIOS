@@ -19,16 +19,7 @@
 	if( (self=[super init]))
     {
         [self setIsTouchEnabled:YES];
-		// ask director the the window size
-		CGSize size = [[CCDirector sharedDirector] winSize];
-        
-        int width = size.width;
-        int height = 32;
-        
-        CCLayerColor* cLayer = [[CCLayerColor alloc] initWithColor:ccc4(0x00, 0x00, 0x00, 0x90) width:width height:height];
-        cLayer.position = ccp(0, size.height - height);
-        [self addChild: cLayer];
-        
+
         bullets = [[NSMutableArray array] retain];
 	}
 	return self;
