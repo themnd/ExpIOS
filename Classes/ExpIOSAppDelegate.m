@@ -10,14 +10,17 @@
 
 #import "ExpIOSAppDelegate.h"
 #import "GameConfig.h"
-#import "Background.h"
-#import "Status.h"
-#import "GameLayer.h"
+#import "MenuScene.h"
 #import "RootViewController.h"
 
 @implementation ExpIOSAppDelegate
 
 @synthesize window;
+
+-(CCScene *) scene
+{
+    return [MenuScene scene];
+}
 
 - (void) removeStartupFlicker
 {
@@ -158,27 +161,6 @@
 	[[CCDirector sharedDirector] release];
 	[window release];
 	[super dealloc];
-}
-
--(CCScene *) scene
-{
-	// 'scene' is an autorelease object.
-	CCScene *scene = [CCScene node];
-	
-	// 'layer' is an autorelease object.
-	Background *layer = [Background node];
-	
-	// add layer as a child to scene
-	[scene addChild: layer];
-    
-    GameLayer* gameLayer = [GameLayer node];
-    [scene addChild: gameLayer];
-    
-    Status* statusLayer = [Status node];
-    [scene addChild: statusLayer];
-	
-	// return the scene
-	return scene;
 }
 
 @end

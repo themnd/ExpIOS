@@ -8,6 +8,7 @@
 
 #import "Status.h"
 #import "Shot.h"
+#import "EventNames.h"
 
 @implementation Status
 
@@ -22,6 +23,7 @@
     {
         [self setIsTouchEnabled:YES];
         [self setAmiciVisible:YES];
+        [self showSettings:YES];
 	}
 	return self;
 }
@@ -38,6 +40,11 @@
         amici = nil;
         [amiciLabel release];
         amiciLabel = nil;
+    }
+    
+    if (settings) {
+        [settings release];
+        settings = nil;
     }
     
 	// don't forget to call "super dealloc"
@@ -66,10 +73,37 @@
     self.isAmiciShown = visible;
 }
 
+- (void) showSettings: (BOOL) visible
+{
+    if (visible == YES) {
+        CGSize size = [[CCDirector sharedDirector] winSize];
+        settings = [CCSprite spriteWithFile:@"pref32.png"];
+        settings.position = ccp(size.width - settings.contentSize.width, size.height - 16);
+        [self addChild:settings];
+    } else {
+        [self removeChild:settings cleanup: YES];
+        settings = nil;
+    }
+}
+
 - (void) doShot: (CGPoint) point
 {
     NSLog(@"Shoot!");
-    [self setAmiciVisible:(self.isAmiciShown ? NO : YES)];
+    //BOOL show = (self.isAmiciShown ? NO : YES);
+    //[self setAmiciVisible:show];
+    //[self showSettings:show];
+    
+    NSLog(@"Shot poistion %f, %f", point.x, point.y);
+    
+    if ([Status hitTest: settings withPoint: point]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:SETTINGS_CLICKED_EVENTMSG object:self];
+    }
+
+}
+
++ (bool) hitTest: (CCSprite*) s withPoint: (CGPoint) pt
+{
+    return CGRectContainsPoint(s.boundingBox, pt);
 }
 
 @end

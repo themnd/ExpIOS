@@ -14,12 +14,16 @@
     BOOL isAmiciShown;
     CCSprite* amici;
     CCLabelTTF* amiciLabel;
+    
+    CCSprite* settings;
 
 }
 
 @property BOOL isAmiciShown;
 
 - (void) setAmiciVisible: (BOOL) visible;
+- (void) showSettings: (BOOL) visible;
 - (void) doShot: (CGPoint) point;
++ (bool) hitTest: (CCSprite*) s withPoint: (CGPoint) pt;
 
 @end

@@ -20,6 +20,6 @@
 @property bool expired;
 
 - (id)initWithTexture:(CCTexture2D *)texture rect:(CGRect)rect;
-- (void)update:(ccTime)dt;
+- (void)update:(ccTime*)dt;
 
 @end

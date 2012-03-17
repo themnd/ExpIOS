@@ -17,6 +17,6 @@
 
 @property (nonatomic, retain) UIWindow *window;
 
-- (CCScene *) scene;
+-(CCScene *) scene;
 
 @end
