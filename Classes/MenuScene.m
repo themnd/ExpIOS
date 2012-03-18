@@ -8,6 +8,8 @@
 
 #import "MenuScene.h"
 #import "GameScene.h"
+#import "AboutScene.h"
+#import "GameSetup.h"
 
 @implementation MenuScene
 
@@ -44,13 +46,13 @@
 - (void)onSettings: (id)sender
 {
     NSLog(@"on settings");
-    //    [[Director sharedDirector] replaceScene:[SettingsScene node]];
+    //[[CCDirector sharedDirector] replaceScene:[GameSetup scene]];
 }
 
 - (void)onAbout: (id)sender
 {
     NSLog(@"on about");
-    //    [[Director sharedDirector] replaceScene:[AboutScene node]];
+    [[CCDirector sharedDirector] replaceScene:[AboutScene scene]];
 }
 
 @end

@@ -21,6 +21,9 @@
 		1FE600CB1514D3D2007A3A54 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE600CA1514D3D2007A3A54 /* GameScene.m */; };
 		1FE601021514D67C007A3A54 /* EventNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE601011514D67C007A3A54 /* EventNames.m */; };
 		1FE601101514D731007A3A54 /* MenuScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6010F1514D731007A3A54 /* MenuScene.m */; };
+		1FE601B91514E037007A3A54 /* GameSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE601B81514E037007A3A54 /* GameSetup.m */; };
+		1FE601F31514E1A5007A3A54 /* AboutScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE601F21514E1A5007A3A54 /* AboutScene.m */; };
+		1FE6022B1515BBCB007A3A54 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE6022A1515BBCB007A3A54 /* about.png */; };
 		1FE6FFF915146DF8007A3A54 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE6FFF815146DF8007A3A54 /* GameLayer.m */; };
 		504DFBCE10AF12E9006D82FE /* CLScoreServerPost.h in Headers */ = {isa = PBXBuildFile; fileRef = 504DFBC810AF12E9006D82FE /* CLScoreServerPost.h */; };
 		504DFBCF10AF12E9006D82FE /* CLScoreServerPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 504DFBC910AF12E9006D82FE /* CLScoreServerPost.m */; };
@@ -286,6 +289,11 @@
 		1FE601011514D67C007A3A54 /* EventNames.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNames.m; sourceTree = "<group>"; };
 		1FE6010E1514D731007A3A54 /* MenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScene.h; sourceTree = "<group>"; };
 		1FE6010F1514D731007A3A54 /* MenuScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScene.m; sourceTree = "<group>"; };
+		1FE601B71514E037007A3A54 /* GameSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetup.h; sourceTree = "<group>"; };
+		1FE601B81514E037007A3A54 /* GameSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSetup.m; sourceTree = "<group>"; };
+		1FE601F11514E1A5007A3A54 /* AboutScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutScene.h; sourceTree = "<group>"; };
+		1FE601F21514E1A5007A3A54 /* AboutScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutScene.m; sourceTree = "<group>"; };
+		1FE6022A1515BBCB007A3A54 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		1FE6FFF715146DF8007A3A54 /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
 		1FE6FFF815146DF8007A3A54 /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -604,6 +612,10 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1FE601F11514E1A5007A3A54 /* AboutScene.h */,
+				1FE601F21514E1A5007A3A54 /* AboutScene.m */,
+				1FE601B71514E037007A3A54 /* GameSetup.h */,
+				1FE601B81514E037007A3A54 /* GameSetup.m */,
 				1FE600C91514D3D2007A3A54 /* GameScene.h */,
 				1FE600CA1514D3D2007A3A54 /* GameScene.m */,
 				1FA78FCF1512A92A00EC0A26 /* Shot.h */,
@@ -694,6 +706,7 @@
 		50F414EB1069373D002A0D5E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1FE6022A1515BBCB007A3A54 /* about.png */,
 				1FE6005515147E36007A3A54 /* pref32.png */,
 				1FA78FC11512A77700EC0A26 /* pallone.png */,
 				1FA78F0E15129DFA00EC0A26 /* amici.png */,
@@ -1152,6 +1165,7 @@
 				1FA78F1315129DFA00EC0A26 /* bg2.jpg in Resources */,
 				1FA78FC21512A77700EC0A26 /* pallone.png in Resources */,
 				1FE6005615147E36007A3A54 /* pref32.png in Resources */,
+				1FE6022B1515BBCB007A3A54 /* about.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1173,6 +1187,8 @@
 				1FE600CB1514D3D2007A3A54 /* GameScene.m in Sources */,
 				1FE601021514D67C007A3A54 /* EventNames.m in Sources */,
 				1FE601101514D731007A3A54 /* MenuScene.m in Sources */,
+				1FE601B91514E037007A3A54 /* GameSetup.m in Sources */,
+				1FE601F31514E1A5007A3A54 /* AboutScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
