@@ -46,7 +46,7 @@
 - (void)onSettings: (id)sender
 {
     NSLog(@"on settings");
-    //[[CCDirector sharedDirector] replaceScene:[GameSetup scene]];
+    [[CCDirector sharedDirector] replaceScene:[GameSetup scene]];
 }
 
 - (void)onAbout: (id)sender
